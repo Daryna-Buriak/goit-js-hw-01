@@ -8,7 +8,7 @@ console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will 
 */
 
 function getShippingMessage (country, price, deliveryFee) {
-    const totalPrice = price + deliveryFee;
+    const totalPrice = parseFloat(price) + parseFloat(deliveryFee);
     return `Shipping to ${country} will cost ${totalPrice} credits`;
 };
 

@@ -9,7 +9,7 @@ console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 cred
 */
 
 function makeTransaction (quantity, pricePerDroid) {
-    const totalPrice = quantity * pricePerDroid;
+    const totalPrice = parseInt(quantity) * parseFloat(pricePerDroid);
     return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 };
 
